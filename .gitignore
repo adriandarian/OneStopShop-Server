@@ -102,3 +102,9 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Misc
+test-results/
+types/graphql.d.ts
+types/unsplash.d.ts
+loadtest.log
