@@ -3,7 +3,7 @@ import sql from 'sql-template-strings';
 import faker from 'faker';
 import addMinutes from 'date-fns/addMinutes';
 
-import { resetDb as envResetDb, fakedDb } from './env';
+import { resetDb as envResetDb, fakedDb, DB_HOST, DB_PORT, DB_DATABASE, DB_USER, DB_PASSWORD  } from './env';
 
 export type User = {
   id: string;
@@ -26,11 +26,11 @@ export type Chat = {
 };
 
 export const dbConfig = {
-  host: 'localhost',
-  port: process.env.DB_PORT ? parseInt(process.env.DB_PORT) : 5432,
-  user: 'testuser',
-  password: 'testpassword',
-  database: 'whatsapp',
+  host: DB_HOST,
+  port: DB_PORT,
+  user: DB_USER,
+  password: DB_PASSWORD,
+  database: DB_DATABASE,
 };
  
 export let pool: Pool = new Pool(dbConfig);
