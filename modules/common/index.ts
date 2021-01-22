@@ -42,6 +42,8 @@ const pubsub = new PostgresPubSub({
   database: DB_DATABASE,
 });
 
+console.log(pubsub);
+
 export default new GraphQLModule({
   name: 'common',
   typeDefs,
