@@ -35,7 +35,7 @@
         "dataloader": "^2.0.0",
         "date-fns": "^2.16.1",
         "dotenv": "^8.2.0",
-        "express": "^4.17.1",
+        "express": "^4.17.3",
         "faker": "^5.1.0",
         "graphql": "^15.4.0",
         "graphql-import": "^1.0.2",
